@@ -12,18 +12,18 @@ function loadData() {
             // console.log(data.data.tools)
             const array = data.data.tools;
             array.forEach(element => {
-                // console.log(element);
+                console.log(element);
                 const aiCard = document.createElement('div');
                 aiCard.innerHTML = `
-                <h1>sss</h1>
+                <!-- // <h1>sss</h1> -->
                  <!-- card-1 -->
-            <div class="p-6 border mt-12 rounded-2xl">
-                <div class="card bg-base-100 shadow-xl border">
-                    <figure><img src="./assets/images/Rectangle 23.png" alt="ChatGPT" /></figure>
-                    <div class="card-body py-6 mx-0 border">
-                        <h3 class="card-title text-2xl font-semibold border">Features</h2>
-                            <ol class="text-base font-normal list-decimal border">
-                                <li class="border">
+            <div class="p-6 mt-12 rounded-2xl border">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="${element.image}" alt="ChatGPT" /></figure>
+                    <div class="card-body py-6 mx-0">
+                        <h3 class="card-title text-2xl font-semibold">Features</h2>
+                            <ol class="text-base font-normal list-decimal">
+                                <li class="">
                                     <p>Natural language processing</p>
                                 </li>
                                 <li>
