@@ -18,27 +18,27 @@ function loadData() {
                 <!-- // <h1>sss</h1> -->
                  <!-- card-1 -->
             <div class="p-6 mt-12 rounded-2xl border">
-                <div class="card bg-base-100 shadow-xl">
-                    <figure><img src="${element.image}" alt="ChatGPT" /></figure>
-                    <div class="card-body py-6 mx-0">
-                        <h3 class="card-title text-2xl font-semibold">Features</h2>
-                            <ol class="text-base font-normal list-decimal">
+                <div class="card bg-base-100">
+                    <figure><img src="${element.image}" alt="${element.name}" /></figure>
+                    <div class="card-body py-6 mx-0 px-0">
+                        <h3 class="card-title text-2xl font-semibold px-0 mx-0">Features</h2>
+                            <ol class="text-base font-normal list-none">
                                 <li class="">
-                                    <p>Natural language processing</p>
+                                    <p>1. ${element.features[0]}</p>
                                 </li>
                                 <li>
-                                    <p>Contextual understanding</p>
+                                    <p>2. ${element.features[1]}</p>
                                 </li>
                                 <li>
-                                    <p>Text generation</p>
+                                    <p>3. ${element.features[2]}</p>
                                 </li>
                             </ol>
                             <div class="card-actions flex justify-between items-center border-t py-6">
                                 <div class="flex flex-col gap-4">
-                                    <h5 class="text-2xl font-semibold inline">ChatGPT</h5>
+                                    <h5 class="text-2xl font-semibold inline">${element.name}</h5>
                                     <p class="flex">
                                         <img class="inline" src="./assets/icons/calendar.svg" alt="">
-                                        <span>11/01/2022</span>
+                                        <span>${element.published_in}</span>
                                     </p>
                                 </div>
                                 <div>
